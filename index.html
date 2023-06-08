@@ -1,7 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-  <script src="container.js"></script>
+  <script src="container.js" defer></script>
   <title>Drag N Drop</title>
   <meta charset="utf-8">
    <link
@@ -26,7 +26,7 @@
 
   <div id="DnD">
 <div class="container1"  ondrop="drop(event)" ondragover="allowDrop(event)" >
-    <div>
+    <div><!--items to be dragged and dropped-->
         <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="http://dummyimage.com/60x40/f00/fff" draggable="true" ondragstart="drag(event)" ondrop=""></div>
         <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2" src="http://dummyimage.com/60x40/00f/fff" draggable="true" ondragstart="drag(event)" ></div>
         <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag3" src="http://dummyimage.com/60x40/0ff/fff" draggable="true" ondragstart="drag(event)" ></div>
@@ -39,6 +39,7 @@
 </div>
   <div class="container2" ondrop="drop(event)" ondragover="allowDrop(event)">
     </div>
+
   <input type="button" value="Reset" id="reset" onclick="reset();">
 
   <section id="contact" class="contact-section">

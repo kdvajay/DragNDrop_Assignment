@@ -7,7 +7,7 @@ var content = container.innerHTML;
 
  function allowDrop(ev) {
    ev.preventDefault();
- }
+ }//to allow drop
 
  function drag(ev) {
    ev.dataTransfer.setData("text", ev.target.id);
@@ -21,7 +21,7 @@ var content = container.innerHTML;
      evtarget = evtarget.parentNode;
    } else {
      ev.target.appendChild(document.getElementById(data));
-     alert(JSON.stringify("Item dropped successfully!"));
+     alert("Item dropped successfully!");
    }
 
  }
