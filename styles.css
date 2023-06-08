@@ -1,0 +1,188 @@
+:root {
+  --main-white: #ffffff;
+  --main-pink: #ff65c3;
+  --main-yellow: #ffdc5c;
+  --main-gray: #303841;
+  /*rgba(218,134,132,255)*/
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+  background-image: linear-gradient(90deg,#ff65c3 5%, #ffdc5c 100%);
+}
+
+.welcome-text > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+/*   font-style: italic; */
+  color: var(--main-white);
+}
+.welcome-text{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  height: auto;
+  max-height:90vh;
+  background-color:rgba(220,127,119,0.6) ;
+  margin: 4rem auto;
+  padding:20px;
+}
+#DnD{margin:0 auto;
+padding:auto;}
+.container1 div{
+      height:auto;
+      display:grid;
+      grid-template-columns: repeat(4,auto);
+      width: 50%;
+      max-width: 1280px;
+  padding:1px;
+    }
+
+    .container1 {
+      width:50%;
+      border:1px solid black;
+      background-color: #f1f1f1;
+      margin: 5px;
+      padding:1px;
+      min-height:20vh;
+      overflow:auto;
+      margin:0 auto;
+    }
+/*  .container1 {
+    grid-template-columns: 1fr;
+  } */
+
+.container2{
+  width:50%;
+  height:auto;
+  min-height:20vh;
+  border:1px solid black;
+  margin: 5px;
+  padding:1px;
+  margin:0 auto;
+}
+
+#reset {
+  display: block;
+  width:30%;
+  margin:auto;
+  border-radius: 3rem;
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.8);
+  transition: background 0.3s ease-out;
+  color:var(--main-white);
+}
+#reset:hover {
+  background: var(--main-white);
+  color:var(--main-gray);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: coloumn;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-height:60vh;
+  padding: 0 2rem;
+  margin:4rem 0;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+   margin:2rem 0;
+
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+   margin:2rem 0;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+a {
+  text-decoration: none;
+  color: var(--main-gray);
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}

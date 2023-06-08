@@ -1,0 +1,59 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="container.js"></script>
+  <title>Drag N Drop</title>
+  <meta charset="utf-8">
+   <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+      <div class="welcome-text" id="welcome-text"><h1>Drag N Drop</h1>
+        <p>This is a Drag and Drop feature website made for an Assignment.</p></div>
+
+  <div id="DnD">
+<div class="container1"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+    <div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="http://dummyimage.com/60x40/f00/fff" draggable="true" ondragstart="drag(event)" ondrop=""></div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2" src="http://dummyimage.com/60x40/00f/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag3" src="http://dummyimage.com/60x40/0ff/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag4" src="http://dummyimage.com/60x40/a0f/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag5" src="http://dummyimage.com/60x40/fb2/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag6" src="http://dummyimage.com/60x40/bd6/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag7" src="http://dummyimage.com/60x40/12d/fff" draggable="true" ondragstart="drag(event)" ></div>
+        <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag8" src="https://dummyimage.com/60x40/000e8c/fff" draggable="true" ondragstart="drag(event)" ></div>
+    </div>
+</div>
+  <div class="container2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+  <input type="button" value="Reset" id="reset" onclick="reset();">
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <p>Contact</p>
+    </div>
+    <div class="contact-links">
+
+        <a
+          id="profile-link"
+          href="https://github.com/kdvajay"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a>
+    </div>
+  </section>
+</body>
+</html>
